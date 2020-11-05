@@ -4,14 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css"/>
-
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap" rel="stylesheet">
 
   <title>Document</title>
 </head>
 <body>
-  <img src="./assets/canvas.png" alt="">
-  <p>hiiiiii</p>
+  <div class="layer__start-screen">
+    <p class="logo">Hotspots</p>
+    <div class="wrapper">
+        <div class="ready">
+            <h1 class="ready__text">Are you ready?</h1>
+            <button class="ready__button">
+                Yes!
+            </button>
+        </div>
+        <div class="model">
+            <img src="./assets/canvas.png" alt="PNG that represents where the canvas for webgl will go">
+        </div>
+    </div>
+  </div>
+  <canvas></canvas>
+
 </body>
-<script src='./index.js'></script>
 
 </html>

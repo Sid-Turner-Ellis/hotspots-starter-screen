@@ -1,3 +1,32 @@
+html {
+  font-size: 5vmin;
+}
+
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Russo One', sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+body .logo {
+  font-family: 'Saira', sans-serif;
+  letter-spacing: 3rem;
+  text-align: center;
+}
+
+body .wrapper {
+  align-items: center;
+}
+
+body .wrapper .ready__button {
   background-color: blue;
+}
+
+body .wrapper .model img {
+  max-width: 20px;
 }
