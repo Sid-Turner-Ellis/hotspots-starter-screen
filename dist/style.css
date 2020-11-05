@@ -13,20 +13,22 @@ canvas {
   display: block;
 }
 
-body .logo {
+.layer__start-screen {
+  position: absolute;
+  z-index: 10;
+  background-color: red;
+}
+
+.layer__start-screen .logo {
   font-family: 'Saira', sans-serif;
   letter-spacing: 3rem;
   text-align: center;
 }
 
-body .wrapper {
+.layer__start-screen .wrapper {
   align-items: center;
 }
 
-body .wrapper .ready__button {
+.layer__start-screen .wrapper .ready__button {
   background-color: blue;
-}
-
-body .wrapper .model img {
-  max-width: 20px;
 }

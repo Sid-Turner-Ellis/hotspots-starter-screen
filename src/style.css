@@ -11,12 +11,16 @@ html {
 
 canvas {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .layer__start-screen {
   position: absolute;
+  width: 100%;
+  height: 100%;
   z-index: 10;
-  background-color: red;
+  padding: 10vmin;
 }
 
 .layer__start-screen .logo {
@@ -27,8 +31,20 @@ canvas {
 
 .layer__start-screen .wrapper {
   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layer__start-screen .wrapper .ready__text {
+  font-size: 4rem;
 }
 
 .layer__start-screen .wrapper .ready__button {
-  background-color: blue;
+  padding: 30px 60px;
+  font-size: 1.5rem;
+}
+
+.layer__start-screen .wrapper > * {
+  min-width: 50%;
 }
