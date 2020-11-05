@@ -12,9 +12,11 @@ canvas {
   display: block;
 }
 
-layer__start-screen {
+.layer__start-screen {
   position: absolute;
-  z-index: 10000;
+  z-index: 10;
+  background-color: red;
+
   .logo {
     font-family: 'Saira', sans-serif;
     letter-spacing: 3rem;
