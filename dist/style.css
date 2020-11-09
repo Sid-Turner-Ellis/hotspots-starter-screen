@@ -51,7 +51,7 @@ canvas {
   min-width: 50%;
 }
 
-.timer__outer {
+.timer .timer__outer {
   position: absolute;
   left: 0;
   top: 0;
@@ -60,7 +60,7 @@ canvas {
   border: solid 1px black;
 }
 
-.timer__outer .timer__value {
+.timer .timer__outer .timer__value {
   background-color: red;
   position: relative;
   left: 0;
