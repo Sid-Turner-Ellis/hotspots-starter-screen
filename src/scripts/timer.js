@@ -4,8 +4,11 @@ function setTimer(seconds){
   bar.style.width = '100%'
 }
 
-setTimer(60)
 
+document.querySelector('#timerBtn').addEventListener('click',(e)=>{
+  setTimer(60)
+  e.target.style.backgroundColor = 'red'
+})
 
 // function setTimer(seconds){
 //   let secondsPassed = 0;

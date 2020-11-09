@@ -71,4 +71,15 @@ canvas {
       // transition: width 0.1s linear;
     }
   }
+
+  #timerBtn {
+    background-color: blue;
+    color: white;
+    position: absolute;
+    top: 100px;
+    z-index: 1000;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
