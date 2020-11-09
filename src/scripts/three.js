@@ -6,7 +6,7 @@ import fox from '../assets/fox.glb'
 const scene = new THREE.Scene()
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
 const canvas = document.querySelector('canvas')
-const renderer = new THREE.WebGLRenderer({canvas})
+const renderer = new THREE.WebGLRenderer({canvas,alpha:true})
 let foxMesh = false
 
 
@@ -49,9 +49,8 @@ function init() {
     console.log('wid',window.innerWidth);
     console.log('height',window.innerHeight);
 
-    renderer.setClearColor('#e5e5e5')
     camera.position.z = 12;
-    
+
     // giving the lookat a reference point
     camera.up.set(0, 1, 0);
     camera.lookAt(0, 0, 0);

@@ -14,72 +14,8 @@ canvas {
   display: block;
   width: 100%;
   height: 100%;
+  background: linear-gradient(180deg, #ff3752 0%, #f23292 100%);
 }
 
-.layer__start-screen {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  padding: 10vmin;
-
-  .logo {
-    font-family: 'Saira', sans-serif;
-    letter-spacing: 3rem;
-    text-align: center;
-  }
-
-  .wrapper {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .ready {
-      &__text {
-        font-size: 4rem;
-      }
-      &__button {
-        padding: 30px 60px;
-        font-size: 1.5rem;
-      }
-    }
-
-    .model {
-    }
-
-    & > * {
-      min-width: 50%;
-    }
-  }
-}
-.timer {
-  .timer__outer {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 5vmin;
-    border: solid 1px black;
-
-    .timer__value {
-      background-color: red;
-      position: relative;
-      left: 0;
-      height: 100%;
-      width: 0%;
-      // transition: width 0.1s linear;
-    }
-  }
-
-  #timerBtn {
-    background-color: blue;
-    color: white;
-    position: absolute;
-    top: 100px;
-    z-index: 1000;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
+@import 'stylesheets/startingscreen';
+@import 'stylesheets/timer';
