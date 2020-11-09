@@ -1,6 +1,3 @@
-import threecode from './scripts/three'
 import startingscreen from './scripts/startingscreen'
-
-function oi(){
-  console.log('oi ya cant');
-}
+import timer from './scripts/timer'
+import threecode from './scripts/three'

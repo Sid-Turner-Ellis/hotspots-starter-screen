@@ -34,7 +34,6 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: center;
-    // padding-left: 10vmin;
 
     .ready {
       &__text {
@@ -51,6 +50,25 @@ canvas {
 
     & > * {
       min-width: 50%;
+    }
+  }
+}
+.timer {
+  .timer__outer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5vmin;
+    border: solid 1px black;
+
+    .timer__value {
+      background-color: red;
+      position: relative;
+      left: 0;
+      height: 100%;
+      width: 0%;
+      // transition: width 0.1s linear;
     }
   }
 }

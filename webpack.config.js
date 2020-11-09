@@ -3,7 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     devServer:{
-      port:7000
+      port:7000,
+      // inline: false
     },
     module: {
         rules: [
@@ -12,7 +13,7 @@ module.exports = {
                 loader: 'html-loader',
             },
             {
-              test: /\.(png|jpe?g|gif|css|bin|zip)$/i,
+              test: /\.(png|jpe?g|gif|css|bin|zip|glb|gltf)$/i,
               loader: 'file-loader',
               options: {
                   publicPath: './',
@@ -20,20 +21,20 @@ module.exports = {
               },
               
           },
-          // {
-          //   test: /\.(gltf)$/,
-          //   use: [
-          //     {
-          //       loader: "gltf-webpack-loader"
-          //     }
-          //   ]
-          // }
-          ,
           {
-            test: /\.gltf$/,
-            loader: '@vxna/gltf-loader',
-            options: { inline: true },
-          },
+            test: /\.(gltf)$/,
+            use: [
+              {
+                loader: "gltf-webpack-loader"
+              }
+            ]
+          }
+          ,
+          // {
+          //   test: /\.gltf$/,
+          //   loader: '@vxna/gltf-loader',
+          //   options: { inline: true },
+          // },
         ]
     },
     plugins: [
